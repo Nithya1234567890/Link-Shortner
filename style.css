@@ -1,0 +1,118 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+body{
+    background: #222;
+    background-image: url('https://thumbs.dreamstime.com/z/blue-internet-background-16303700.jpg');
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: hard-light;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    background-color: rgb(4 4 4 / 50%);
+    border: 5px solid rgb(73, 70, 255);
+    padding: 80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#longurl{
+    height: 40px;
+    width: 296px;
+    border: 2px solid black;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    margin-right: 0;
+}
+
+#shorten{
+    border: 2px solid black;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    font-size: x-large;
+    padding: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+    margin-left: 0;
+    background-color: purple;
+}
+
+#shorten:hover{
+    cursor: pointer;
+    background-color: rgb(25, 100, 130);
+}
+
+#shorturl{
+    height: 40px;
+    width: 270px;
+    border: 2px solid black;
+    border-radius: 13px;
+    padding-left: 10px;
+    padding-right: 47px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#copy{
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: purple;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+#copy:hover{
+    background-color: rgb(25, 100, 130);
+    cursor: pointer;
+}
+
+.main p{
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:450px){
+    .main{
+        padding: 50px;
+    }
+    .main p{
+        font-size: 40px;
+    }
+    #longurl{
+        width: 153px;
+    }
+    #shorten{
+        font-size: medium;
+        padding: 13px;
+    }
+    #shorturl{
+        width: 210px;
+    }
+}
